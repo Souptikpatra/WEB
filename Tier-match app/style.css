@@ -1,0 +1,21 @@
+.tier-list{
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 30px;
+}
+.tier-list > h1 {
+    display: inline;
+    border-right: 2px solid black;
+    padding-right: 15px;
+}
+
+#images-section{
+    display: flex;
+    gap: 1rem;
+}
+.image-container > img{
+    height: 95px;
+    width: 95px;
+    border-radius: 5px;
+}

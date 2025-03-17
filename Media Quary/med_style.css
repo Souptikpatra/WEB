@@ -1,0 +1,59 @@
+*{ /* CSS reset*/
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav{ /* Nav bar styling*/
+    background-color: aquamarine;
+    height: 50px;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+ul{ /* ul tag styling*/
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-right: 10px;
+}
+a{ /* styling to each anchor tag*/
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px){
+    /*we will apply the below rules only to those screen which have atmost 768px --> phone screen*/
+    #nav{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+    /*we will apply the below rules only to those screen which have atmost 425px --> small phone screen*/
+    #nav{
+        height: 100vh;
+        width: 90px;
+        align-items: start;
+        justify-content: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li{
+        margin-top: 25px;
+    }
+}

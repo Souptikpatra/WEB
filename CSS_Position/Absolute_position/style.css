@@ -1,0 +1,21 @@
+#div1,#div2,#div3{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+}
+
+section{ /* Parent */
+    margin-left: 400px;
+    position: relative; /* parent must have some position value otherthan 'static' 
+                            to implement absolute positioning to its child */
+    height: 650px;
+    width: 900px;
+    background-color: aquamarine;
+}
+
+#div2{
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}

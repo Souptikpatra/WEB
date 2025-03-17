@@ -1,0 +1,26 @@
+div{
+    height: 200px;
+    width: 200px;
+}
+
+div > img{
+    height: 100%;
+    width: 100%;
+}
+#dog1{
+    
+}
+
+#dog2{
+    position: relative;
+    left: 300px;
+    top: -200px; /* Negative top value to move the element upwards
+                    its negetive because we move in negetive direction w.r.t
+                    original position */
+}
+
+#dog3{
+    position: relative;
+    left: 600px;
+    top: -400px; 
+}

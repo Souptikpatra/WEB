@@ -1,0 +1,19 @@
+#red{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+
+    transition-property: background-color transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+#red:hover{
+    background-color: blue;
+    border-radius: 100%;
+    transform: rotate(360deg) scale(1.5);
+}

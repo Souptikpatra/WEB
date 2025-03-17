@@ -1,0 +1,23 @@
+.gradient{
+    height: 2px;
+    background: linear-gradient(90deg, rgba(157,173,42,1) 0%, rgba(85,187,81,1) 47%, rgba(0,212,255,1) 100%);
+}
+    
+
+
+#navlist{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex; /* making navlist as flex container */
+
+    gap: 2rem; /* used to make a gap between flex - items*/
+
+    justify-content: space-around; /* the flex items stretched evenly except terminal items*/
+    height: 100px;
+
+    align-items: center; /* maintainning distribuition along cross axis*/
+
+    flex-direction: row-reverse; 
+    
+}

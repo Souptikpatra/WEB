@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100vh;
+    background-color: white;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+#loader1{
+    border: 5px solid white;
+    border-top: 5px solid #3498db;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loader2{
+    border-radius: 100%;
+    background-color:#3498db;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
+
+#loader3{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color:#3498db;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+#loader4{
+    height: 50px;
+    width: 10px;
+    border-radius: 5px;
+    background-color:#3498db;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes stretch{
+   0%, 100%{
+       transform: scaleY(0.8);
+   }
+    50%{
+         transform: scaleY(1.5);
+    }
+}
+
+#loader5{
+    display: flex;
+    justify-content: space-between;
+}
+#loader5::after, #loader5::before{ /*The ::before and ::after are CSS pseudo-elements used to insert content before or after the content of an element. */
+    content: ""; /*it makes*/
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: #3498db;
+    animation-name: roller;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#loader5::before{
+    animation-delay: -0.5s;
+}
+
+
+@keyframes roller{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

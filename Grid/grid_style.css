@@ -1,0 +1,21 @@
+#container{
+    display: grid;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    grid-template-columns: repeat(4,1fr);
+
+    grid-template-areas: 
+    "a1 a2 a3"
+    "b1 b2 b3"
+    "c1 c2 c3";    
+}
+
+.item{
+    background: gold;
+    margin: 1px;
+    border: 2px solid rgb(209, 8, 8);
+    border-radius: 2px
+}
+
